@@ -1,0 +1,151 @@
+/* Estilo geral da aplicação */
+.app-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #8e44ad, #a6c2f5); /* roxo (#8e44ad) para lilás (#d4a6f5) */
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+/* Container principal */
+.app-container {
+  background-color: #ffffff;
+  border-radius: 12px; /* Borda mais suave */
+  padding: 40px;
+  min-height: 80vh; /* Diminuindo altura mínima */
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  margin: 30px auto; /* Centralizando com espaçamento */
+}
+
+/* Seção de introdução */
+.intro-section {
+  margin-bottom: 50px; /* Maior espaçamento entre as seções */
+}
+
+.title {
+  font-size: 2.8rem; /* Tamanho reduzido */
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem; /* Tamanho ajustado */
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 40px; /* Aumentando o espaçamento */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Seção de tutorial */
+.tutorial-section {
+  background-color: #ecf0f1;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 40px;
+  border: 1px solid #bdc3c7;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.tutorial-content ol {
+  padding-left: 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.tutorial-content li {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 18px;
+}
+
+.tutorial-content strong {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Estilos para os botões */
+button {
+  background-color: #1a3b97;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  width: 230px; /* Largura ajustada */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adicionando sombra leve */
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Estilos para o componente ImageCropper */
+.image-cropper-container {
+  margin-top: 30px;
+  position: relative;
+}
+
+.image-cropper-container input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  border: 1px solid #bdc3c7; /* Adicionando borda suave */
+}
+
+.image-cropper-container button {
+  background-color: #1a3b97; /* Cor consistente com os botões */
+  color: white;
+}
+
+.image-cropper-container .cropped-image-preview img {
+  max-width: 100%;
+  max-height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adicionando sombra à imagem */
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  width: 100%;
+  border-top: 1px solid #34495e;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+  color: #bdc3c7; /* Cor de texto mais suave */
+}
